@@ -7,7 +7,7 @@ const { NODE_ENV } = require("./config");
 
 const app = express();
 
-const morganOption = NODE_ENV === "production" ? "tiny" : "commom";
+const morganOption = NODE_ENV === "production" ? "tiny" : "common"; //or use dev in place of common
 
 app.use(morgan(morganOption));
 app.use(helmet());
